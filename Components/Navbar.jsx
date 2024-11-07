@@ -49,10 +49,10 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center bg-gray-300">
+          <div className="md:hidden flex items-center bg-gray-100">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-900"
             >
               <span className="sr-only">Open main menu</span>
               {/* Hamburger Icon */}
@@ -96,7 +96,7 @@ const Navbar = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: isOpen ? 1 : 0, y: isOpen ? 0 : -20 }}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-300 rounded-lg">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-200 rounded-lg">
           {navItems.map((item) => (
             <a
               key={item.name}

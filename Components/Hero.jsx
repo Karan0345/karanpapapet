@@ -1,14 +1,18 @@
+
 import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
     <div className='relative flex items-center justify-center min-h-screen'>
-      <div className='w-full h-full absolute '>
-        <img 
-          src="/dog.jpg" 
-          alt="hero" 
-          className='absolute w-full h-full object-cover' 
-        />
+      <div className='w-full h-full absolute'>
+        <picture className='absolute w-full h-full object-cover'>
+          <source media="(max-width: 768px)" srcSet="https://i.pinimg.com/564x/b4/c0/92/b4c092c5588c1cba7788988a9204ac0f.jpg" />
+          <img 
+            src="/dog.jpg" 
+            alt="hero" 
+            className='w-full h-full object-cover' 
+          />
+        </picture>
       </div>
       <motion.div 
         initial={{ opacity: 0 }}
